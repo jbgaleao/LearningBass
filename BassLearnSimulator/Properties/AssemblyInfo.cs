@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associada a um assembly.
 [assembly: AssemblyTitle("BassLearnSimulator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Aplicaco auxiliar no aprendizado de contrabaixo")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("J Soft")]
 [assembly: AssemblyProduct("BassLearnSimulator")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
@@ -35,5 +35,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguage("pt-BR")]
+//[assembly: NeutralResourcesLanguage("pt-BR")]
 

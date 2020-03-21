@@ -22,7 +22,7 @@ namespace BassLearnSimulator.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace BassLearnSimulator.Properties {
         ///   Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BassLearnSimulator.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace BassLearnSimulator.Properties {
         ///   pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A_1 {
+        public static System.IO.UnmanagedMemoryStream A_1 {
             get {
                 return ResourceManager.GetStream("A_1", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A_2 {
+        public static System.IO.UnmanagedMemoryStream A_2 {
             get {
                 return ResourceManager.GetStream("A_2", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A_3 {
+        public static System.IO.UnmanagedMemoryStream A_3 {
             get {
                 return ResourceManager.GetStream("A_3", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A_4 {
+        public static System.IO.UnmanagedMemoryStream A_4 {
             get {
                 return ResourceManager.GetStream("A_4", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A1 {
+        public static System.IO.UnmanagedMemoryStream A1 {
             get {
                 return ResourceManager.GetStream("A1", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A2 {
+        public static System.IO.UnmanagedMemoryStream A2 {
             get {
                 return ResourceManager.GetStream("A2", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A3 {
+        public static System.IO.UnmanagedMemoryStream A3 {
             get {
                 return ResourceManager.GetStream("A3", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream A4 {
+        public static System.IO.UnmanagedMemoryStream A4 {
             get {
                 return ResourceManager.GetStream("A4", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Ab1 {
+        public static System.IO.UnmanagedMemoryStream Ab1 {
             get {
                 return ResourceManager.GetStream("Ab1", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Ab2 {
+        public static System.IO.UnmanagedMemoryStream Ab2 {
             get {
                 return ResourceManager.GetStream("Ab2", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Ab3 {
+        public static System.IO.UnmanagedMemoryStream Ab3 {
             get {
                 return ResourceManager.GetStream("Ab3", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Ab4 {
+        public static System.IO.UnmanagedMemoryStream Ab4 {
             get {
                 return ResourceManager.GetStream("Ab4", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream B0 {
+        public static System.IO.UnmanagedMemoryStream B0 {
             get {
                 return ResourceManager.GetStream("B0", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream B1 {
+        public static System.IO.UnmanagedMemoryStream B1 {
             get {
                 return ResourceManager.GetStream("B1", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream B2 {
+        public static System.IO.UnmanagedMemoryStream B2 {
             get {
                 return ResourceManager.GetStream("B2", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream B3 {
+        public static System.IO.UnmanagedMemoryStream B3 {
             get {
                 return ResourceManager.GetStream("B3", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream B4 {
+        public static System.IO.UnmanagedMemoryStream B4 {
             get {
                 return ResourceManager.GetStream("B4", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Bb1 {
+        public static System.IO.UnmanagedMemoryStream Bb1 {
             get {
                 return ResourceManager.GetStream("Bb1", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Bb2 {
+        public static System.IO.UnmanagedMemoryStream Bb2 {
             get {
                 return ResourceManager.GetStream("Bb2", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Bb3 {
+        public static System.IO.UnmanagedMemoryStream Bb3 {
             get {
                 return ResourceManager.GetStream("Bb3", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Bb4 {
+        public static System.IO.UnmanagedMemoryStream Bb4 {
             get {
                 return ResourceManager.GetStream("Bb4", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C_1 {
+        public static System.IO.UnmanagedMemoryStream C_1 {
             get {
                 return ResourceManager.GetStream("C_1", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C_2 {
+        public static System.IO.UnmanagedMemoryStream C_2 {
             get {
                 return ResourceManager.GetStream("C_2", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C_3 {
+        public static System.IO.UnmanagedMemoryStream C_3 {
             get {
                 return ResourceManager.GetStream("C_3", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C_4 {
+        public static System.IO.UnmanagedMemoryStream C_4 {
             get {
                 return ResourceManager.GetStream("C_4", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C1 {
+        public static System.IO.UnmanagedMemoryStream C1 {
             get {
                 return ResourceManager.GetStream("C1", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C2 {
+        public static System.IO.UnmanagedMemoryStream C2 {
             get {
                 return ResourceManager.GetStream("C2", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C3 {
+        public static System.IO.UnmanagedMemoryStream C3 {
             get {
                 return ResourceManager.GetStream("C3", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C4 {
+        public static System.IO.UnmanagedMemoryStream C4 {
             get {
                 return ResourceManager.GetStream("C4", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream C5 {
+        public static System.IO.UnmanagedMemoryStream C5 {
             get {
                 return ResourceManager.GetStream("C5", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D_1 {
+        public static System.IO.UnmanagedMemoryStream D_1 {
             get {
                 return ResourceManager.GetStream("D_1", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D_2 {
+        public static System.IO.UnmanagedMemoryStream D_2 {
             get {
                 return ResourceManager.GetStream("D_2", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D_3 {
+        public static System.IO.UnmanagedMemoryStream D_3 {
             get {
                 return ResourceManager.GetStream("D_3", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D_4 {
+        public static System.IO.UnmanagedMemoryStream D_4 {
             get {
                 return ResourceManager.GetStream("D_4", resourceCulture);
             }
@@ -369,7 +369,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D1 {
+        public static System.IO.UnmanagedMemoryStream D1 {
             get {
                 return ResourceManager.GetStream("D1", resourceCulture);
             }
@@ -378,7 +378,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D2 {
+        public static System.IO.UnmanagedMemoryStream D2 {
             get {
                 return ResourceManager.GetStream("D2", resourceCulture);
             }
@@ -387,7 +387,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D3 {
+        public static System.IO.UnmanagedMemoryStream D3 {
             get {
                 return ResourceManager.GetStream("D3", resourceCulture);
             }
@@ -396,7 +396,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream D4 {
+        public static System.IO.UnmanagedMemoryStream D4 {
             get {
                 return ResourceManager.GetStream("D4", resourceCulture);
             }
@@ -405,7 +405,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Db1 {
+        public static System.IO.UnmanagedMemoryStream Db1 {
             get {
                 return ResourceManager.GetStream("Db1", resourceCulture);
             }
@@ -414,7 +414,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Db2 {
+        public static System.IO.UnmanagedMemoryStream Db2 {
             get {
                 return ResourceManager.GetStream("Db2", resourceCulture);
             }
@@ -423,7 +423,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Db3 {
+        public static System.IO.UnmanagedMemoryStream Db3 {
             get {
                 return ResourceManager.GetStream("Db3", resourceCulture);
             }
@@ -432,7 +432,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Db4 {
+        public static System.IO.UnmanagedMemoryStream Db4 {
             get {
                 return ResourceManager.GetStream("Db4", resourceCulture);
             }
@@ -441,7 +441,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream E1 {
+        public static System.IO.UnmanagedMemoryStream E1 {
             get {
                 return ResourceManager.GetStream("E1", resourceCulture);
             }
@@ -450,7 +450,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream E2 {
+        public static System.IO.UnmanagedMemoryStream E2 {
             get {
                 return ResourceManager.GetStream("E2", resourceCulture);
             }
@@ -459,7 +459,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream E3 {
+        public static System.IO.UnmanagedMemoryStream E3 {
             get {
                 return ResourceManager.GetStream("E3", resourceCulture);
             }
@@ -468,7 +468,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream E4 {
+        public static System.IO.UnmanagedMemoryStream E4 {
             get {
                 return ResourceManager.GetStream("E4", resourceCulture);
             }
@@ -477,7 +477,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Eb1 {
+        public static System.IO.UnmanagedMemoryStream Eb1 {
             get {
                 return ResourceManager.GetStream("Eb1", resourceCulture);
             }
@@ -486,7 +486,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Eb2 {
+        public static System.IO.UnmanagedMemoryStream Eb2 {
             get {
                 return ResourceManager.GetStream("Eb2", resourceCulture);
             }
@@ -495,7 +495,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Eb3 {
+        public static System.IO.UnmanagedMemoryStream Eb3 {
             get {
                 return ResourceManager.GetStream("Eb3", resourceCulture);
             }
@@ -504,7 +504,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Eb4 {
+        public static System.IO.UnmanagedMemoryStream Eb4 {
             get {
                 return ResourceManager.GetStream("Eb4", resourceCulture);
             }
@@ -513,7 +513,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream err {
+        public static System.IO.UnmanagedMemoryStream err {
             get {
                 return ResourceManager.GetStream("err", resourceCulture);
             }
@@ -522,7 +522,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream error {
+        public static System.IO.UnmanagedMemoryStream error {
             get {
                 return ResourceManager.GetStream("error", resourceCulture);
             }
@@ -531,7 +531,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F_1 {
+        public static System.IO.UnmanagedMemoryStream F_1 {
             get {
                 return ResourceManager.GetStream("F_1", resourceCulture);
             }
@@ -540,7 +540,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F_2 {
+        public static System.IO.UnmanagedMemoryStream F_2 {
             get {
                 return ResourceManager.GetStream("F_2", resourceCulture);
             }
@@ -549,7 +549,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F_3 {
+        public static System.IO.UnmanagedMemoryStream F_3 {
             get {
                 return ResourceManager.GetStream("F_3", resourceCulture);
             }
@@ -558,7 +558,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F_4 {
+        public static System.IO.UnmanagedMemoryStream F_4 {
             get {
                 return ResourceManager.GetStream("F_4", resourceCulture);
             }
@@ -567,7 +567,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F1 {
+        public static System.IO.UnmanagedMemoryStream F1 {
             get {
                 return ResourceManager.GetStream("F1", resourceCulture);
             }
@@ -576,7 +576,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F2 {
+        public static System.IO.UnmanagedMemoryStream F2 {
             get {
                 return ResourceManager.GetStream("F2", resourceCulture);
             }
@@ -585,7 +585,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F3 {
+        public static System.IO.UnmanagedMemoryStream F3 {
             get {
                 return ResourceManager.GetStream("F3", resourceCulture);
             }
@@ -594,7 +594,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream F4 {
+        public static System.IO.UnmanagedMemoryStream F4 {
             get {
                 return ResourceManager.GetStream("F4", resourceCulture);
             }
@@ -603,7 +603,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G_1 {
+        public static System.IO.UnmanagedMemoryStream G_1 {
             get {
                 return ResourceManager.GetStream("G_1", resourceCulture);
             }
@@ -612,7 +612,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G_2 {
+        public static System.IO.UnmanagedMemoryStream G_2 {
             get {
                 return ResourceManager.GetStream("G_2", resourceCulture);
             }
@@ -621,7 +621,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G_3 {
+        public static System.IO.UnmanagedMemoryStream G_3 {
             get {
                 return ResourceManager.GetStream("G_3", resourceCulture);
             }
@@ -630,7 +630,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G_4 {
+        public static System.IO.UnmanagedMemoryStream G_4 {
             get {
                 return ResourceManager.GetStream("G_4", resourceCulture);
             }
@@ -639,7 +639,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G1 {
+        public static System.IO.UnmanagedMemoryStream G1 {
             get {
                 return ResourceManager.GetStream("G1", resourceCulture);
             }
@@ -648,7 +648,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G2 {
+        public static System.IO.UnmanagedMemoryStream G2 {
             get {
                 return ResourceManager.GetStream("G2", resourceCulture);
             }
@@ -657,7 +657,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G3 {
+        public static System.IO.UnmanagedMemoryStream G3 {
             get {
                 return ResourceManager.GetStream("G3", resourceCulture);
             }
@@ -666,7 +666,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream G4 {
+        public static System.IO.UnmanagedMemoryStream G4 {
             get {
                 return ResourceManager.GetStream("G4", resourceCulture);
             }
@@ -675,7 +675,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Gb1 {
+        public static System.IO.UnmanagedMemoryStream Gb1 {
             get {
                 return ResourceManager.GetStream("Gb1", resourceCulture);
             }
@@ -684,7 +684,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Gb2 {
+        public static System.IO.UnmanagedMemoryStream Gb2 {
             get {
                 return ResourceManager.GetStream("Gb2", resourceCulture);
             }
@@ -693,7 +693,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Gb3 {
+        public static System.IO.UnmanagedMemoryStream Gb3 {
             get {
                 return ResourceManager.GetStream("Gb3", resourceCulture);
             }
@@ -702,7 +702,7 @@ namespace BassLearnSimulator.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Gb4 {
+        public static System.IO.UnmanagedMemoryStream Gb4 {
             get {
                 return ResourceManager.GetStream("Gb4", resourceCulture);
             }
