@@ -181,8 +181,14 @@ namespace LearningBass
         private void Timer1_Tick(object sender, EventArgs e)
         {
             DataGridViewRow row = gridNotas.Rows[NumLinhaCelulaSelecionada];
-            row.DefaultCellStyle.SelectionBackColor = Color.White;
-            row.DefaultCellStyle.SelectionForeColor = Color.White;
+
+            gridNotas.Rows[NumLinhaCelulaSelecionada].Cells[NumColunaCelulaSelecionada].Style.ForeColor = Color.White;
+            
+            
+           // row[NumLinhaCelulaSelecionada,].Cells[IndiceDaCelula].
+
+            //row.DefaultCellStyle.SelectionBackColor = Color.White;
+            //row.DefaultCellStyle.SelectionForeColor = Color.White;
 
             timer1.Stop();
         }
