@@ -142,7 +142,7 @@ namespace BassLearnSimulator
 
         private static void FormataCelulaSelecionadaOKeTreino(DataGridViewCellMouseEventArgs e, DataGridViewRow row)
         {
-            Stream strOK = (Stream)Properties.Resources.ResourceManager.GetObject(row.Cells[e.ColumnIndex].Value.ToString().Replace("#", "s"));
+            Stream strOK = (Stream)Properties.Resources.ResourceManager.GetObject(row.Cells[e.ColumnIndex].Value.ToString().Replace("#", "s"), null);
             SoundPlayer SonidoOK = new SoundPlayer(strOK);
             SonidoOK.Play();
 
