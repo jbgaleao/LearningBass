@@ -95,10 +95,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\error.wav" />
-    <None Include="Resources\err.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6 %28x86 e x64%29</ProductName>
@@ -118,6 +114,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DBLearningBass.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\error.wav" />
+    <None Include="Resources\err.wav" />
     <None Include="Resources\Gs4.wav" />
     <None Include="Resources\Gs3.wav" />
     <None Include="Resources\Gs2.wav" />
