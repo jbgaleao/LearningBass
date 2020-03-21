@@ -125,7 +125,7 @@ namespace LearningBass
                 }
                 else
                 {
-                    Stream strErr = (Stream)Properties.Resources.ResourceManager.GetObject("error");
+                    Stream strErr = (Stream)Properties.Resources.ResourceManager.GetObject("err");
                     SoundPlayer Sonido = new SoundPlayer(strErr);
                     Sonido.Play();
                     timer1.Enabled = true;
