@@ -8,7 +8,7 @@ namespace LearningBass
         private static SqlConnection instance;
         public DBConnection() { }
         public static SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;
-                                                                AttachDbFilename=C:\Users\jbgal\source\repos\BassLearnSimulator\LearningBass\DBLearningBass.mdf;
+                                                                AttachDbFilename=C:\Users\jbgal\source\repos\DBLearningBass\LearningBass\DBLearningBass.mdf;
                                                                 Integrated Security=True");
 
 
