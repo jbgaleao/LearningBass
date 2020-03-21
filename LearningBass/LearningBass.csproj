@@ -95,6 +95,29 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\error.wav" />
+    <None Include="Resources\err.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBLearningBass.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DBLearningBass_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DBLearningBass.mdf</DependentUpon>
+    </Content>
     <None Include="Resources\Gs4.wav" />
     <None Include="Resources\Gs3.wav" />
     <None Include="Resources\Gs2.wav" />
@@ -115,8 +138,6 @@
     <None Include="Resources\F3.wav" />
     <None Include="Resources\F2.wav" />
     <None Include="Resources\F1.wav" />
-    <None Include="Resources\error.wav" />
-    <None Include="Resources\err.wav" />
     <None Include="Resources\Eb4.wav" />
     <None Include="Resources\Eb3.wav" />
     <None Include="Resources\Eb2.wav" />
@@ -167,27 +188,6 @@
     <None Include="Resources\A3.wav" />
     <None Include="Resources\A2.wav" />
     <None Include="Resources\A1.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6 %28x86 e x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DBLearningBass.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DBLearningBass_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DBLearningBass.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
