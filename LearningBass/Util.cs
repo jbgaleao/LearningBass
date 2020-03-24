@@ -10,7 +10,7 @@ namespace LearningBass
     {
         public static DataTable ConvertListToDataTable(List<string[]> list)
         {
-            // New table.
+            // New table
             DataTable table = new DataTable();
 
             // Get max columns.
