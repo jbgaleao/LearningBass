@@ -1,16 +1,16 @@
 ﻿namespace LearningBass
 {
-    partial class frmBLSPrincipal
+    partial class LBPrincipal
     {
         /// <summary>
-        /// Variável de designer necessária.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpar os recursos que estão sendo usados.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,18 +20,18 @@
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Windows Form Designer
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlFuncionalidades = new System.Windows.Forms.TabControl();
             this.tabMapeamentoBraco = new System.Windows.Forms.TabPage();
             this.gridNotas = new System.Windows.Forms.DataGridView();
@@ -55,7 +55,6 @@
             this.label68 = new System.Windows.Forms.Label();
             this.btnLimpaGrid = new System.Windows.Forms.Button();
             this.btnMontarGrid = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label65 = new System.Windows.Forms.Label();
             this.cmbQtdCordas = new System.Windows.Forms.ComboBox();
             this.cmbQtdCasas = new System.Windows.Forms.ComboBox();
@@ -105,32 +104,32 @@
             this.gridNotas.BackgroundColor = System.Drawing.Color.White;
             this.gridNotas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridNotas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gridNotas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gridNotas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gridNotas.ColumnHeadersHeight = 42;
             this.gridNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridNotas.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridNotas.DefaultCellStyle = dataGridViewCellStyle5;
             this.gridNotas.EnableHeadersVisualStyles = false;
             this.gridNotas.Location = new System.Drawing.Point(16, 276);
             this.gridNotas.Name = "gridNotas";
             this.gridNotas.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridNotas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridNotas.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gridNotas.RowHeadersWidth = 60;
             this.gridNotas.RowTemplate.Height = 36;
             this.gridNotas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
@@ -147,7 +146,6 @@
             this.panel1.Controls.Add(this.gboxConfiguraNotacao);
             this.panel1.Controls.Add(this.btnLimpaGrid);
             this.panel1.Controls.Add(this.btnMontarGrid);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label65);
             this.panel1.Controls.Add(this.cmbQtdCordas);
             this.panel1.Controls.Add(this.cmbQtdCasas);
@@ -363,6 +361,7 @@
             this.btnLimpaGrid.TabIndex = 147;
             this.btnLimpaGrid.Text = "Limpar Grid";
             this.btnLimpaGrid.UseVisualStyleBackColor = true;
+            this.btnLimpaGrid.Click += new System.EventHandler(this.btnLimpaGrid_Click);
             // 
             // btnMontarGrid
             // 
@@ -375,17 +374,6 @@
             this.btnMontarGrid.Text = "Montar Grid";
             this.btnMontarGrid.UseVisualStyleBackColor = true;
             this.btnMontarGrid.Click += new System.EventHandler(this.BtnMontarGrid_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Location = new System.Drawing.Point(1317, 201);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 28);
-            this.button1.TabIndex = 148;
-            this.button1.Text = "Checar";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label65
             // 
@@ -401,7 +389,6 @@
             this.cmbQtdCordas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbQtdCordas.FormattingEnabled = true;
             this.cmbQtdCordas.Items.AddRange(new object[] {
-            "< Selecione >",
             "4",
             "5",
             "6"});
@@ -415,7 +402,6 @@
             this.cmbQtdCasas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbQtdCasas.FormattingEnabled = true;
             this.cmbQtdCasas.Items.AddRange(new object[] {
-            "< Selecione >",
             "20",
             "21",
             "22",
@@ -468,14 +454,14 @@
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // frmBLSPrincipal
+            // LBPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1553, 616);
             this.Controls.Add(this.tabControlFuncionalidades);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "frmBLSPrincipal";
+            this.Name = "LBPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bass Learn Simulator";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -502,7 +488,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLimpaGrid;
         private System.Windows.Forms.Button btnMontarGrid;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label64;
@@ -528,4 +513,3 @@
         private System.Windows.Forms.Timer timer1;
     }
 }
-

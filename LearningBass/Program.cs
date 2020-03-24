@@ -16,7 +16,7 @@ namespace LearningBass
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmBLSPrincipal());
+            Application.Run(new LBPrincipal());
         }
     }
 }

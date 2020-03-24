@@ -1,35 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Media;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LearningBass
 {
-
-    public partial class frmBLSPrincipal : Form
+    public partial class LBPrincipal : Form
     {
         private bool LocalizarNota = false;
+        private DataGridViewRow row = new DataGridViewRow();
+
         string NotaProcurada = "";
         List<string> ListaSustenidos = new List<string> { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
         List<string> ListaBemois = new List<string> { "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B" };
         int NumLinhaCelulaSelecionada, NumColunaCelulaSelecionada;
 
-        public bool LocalizarNota1 { get => LocalizarNota; set => LocalizarNota = value; }
-
-        public frmBLSPrincipal()
+        public LBPrincipal()
         {
-            InitializeComponent();
-
+            InitializeComponent();      
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             CarregaComboNotacao(ListaSustenidos);
-            cmbQtdCordas.SelectedIndex = 1;
-            cmbQtdCasas.SelectedIndex = 1;
+            cmbQtdCasas.SelectedIndex = 0;
+            cmbQtdCordas.SelectedIndex = 0;
             cmbNota.SelectedIndex = 0;
         }
 
@@ -38,20 +40,8 @@ namespace LearningBass
             cmbNota.DataSource = listaSustenidos;
         }
 
-        private void Mouse_Up(object sender, MouseEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Mouse_DoubleClick(object sender, MouseEventArgs e)
-        {
-            (sender as Label).BackColor = Color.Gold;
-        }
-
         private void BtnMontarGrid_Click(object sender, EventArgs e)
         {
-            VerificaCombos();
-
             #region Variaveis
             int qtdCasas = int.Parse(cmbQtdCasas.Text);
             int qtdCordas = int.Parse(cmbQtdCordas.Text);
@@ -85,29 +75,9 @@ namespace LearningBass
 
         }
 
-        private void VerificaCombos()
-        {
-            if (cmbQtdCordas.Text == "< Selecione >")
-            {
-                MessageBox.Show("Selecionar Quantidade de Casas");
-                return;
-            }
-            if (cmbQtdCasas.Text == "< Selecione >")
-            {
-                MessageBox.Show("Selecionar Quantidade de Cordas");
-                return;
-            }
-            //if (cmbNota.Text == "< Selecione >")
-            //{
-            //    MessageBox.Show("Selecionar uma Nota Musical");
-            //    return;
-            //}
-        }
-
-
         private void GridNotas_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            DataGridViewRow row = gridNotas.Rows[e.RowIndex];
+            row = gridNotas.Rows[e.RowIndex];
             NumLinhaCelulaSelecionada = e.RowIndex;
             NumColunaCelulaSelecionada = e.ColumnIndex;
 
@@ -132,6 +102,8 @@ namespace LearningBass
 
                     row.DefaultCellStyle.SelectionForeColor = Color.Red;
                     row.DefaultCellStyle.SelectionBackColor = Color.LightYellow;
+
+                    
                 }
             }
             else
@@ -146,7 +118,7 @@ namespace LearningBass
             SoundPlayer SonidoOK = new SoundPlayer(strOK);
             SonidoOK.Play();
 
-            row.DefaultCellStyle.SelectionBackColor = Color.Black;
+            row.DefaultCellStyle.SelectionForeColor = Color.Black;
             row.DefaultCellStyle.SelectionBackColor = Color.Lavender;
         }
 
@@ -176,19 +148,19 @@ namespace LearningBass
             }
         }
 
+        private void btnLimpaGrid_Click(object sender, EventArgs e)
+        {
 
+        }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            DataGridViewRow row = gridNotas.Rows[NumLinhaCelulaSelecionada];
+            //DataGridViewRow row = gridNotas.Rows[NumLinhaCelulaSelecionada];
 
-            gridNotas.Rows[NumLinhaCelulaSelecionada].Cells[NumColunaCelulaSelecionada].Style.ForeColor = Color.White;
-            
-            
-           // row[NumLinhaCelulaSelecionada,].Cells[IndiceDaCelula].
+            row.DefaultCellStyle.SelectionForeColor = Color.White;
+            row.DefaultCellStyle.SelectionBackColor = Color.White;
 
-            //row.DefaultCellStyle.SelectionBackColor = Color.White;
-            //row.DefaultCellStyle.SelectionForeColor = Color.White;
+            //gridNotas.Rows[NumLinhaCelulaSelecionada].Cells[NumColunaCelulaSelecionada].Style.ForeColor = Color.White;
 
             timer1.Stop();
         }
