@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LearningBass
@@ -24,20 +20,21 @@ namespace LearningBass
 
         public LBPrincipal()
         {
-            InitializeComponent();      
+            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            CarregaComboNotacao(ListaSustenidos);
+            cmbNota.DataSource = ListaSustenidos;
+            cmbSelecaoNotaEscala.DataSource = ListaSustenidos;
+
+            cmbSelecaoNotaEscala.SelectedIndex = 0;
+            cmbTipoEscala.SelectedIndex = 0;
+
+
             cmbQtdCasas.SelectedIndex = 0;
             cmbQtdCordas.SelectedIndex = 0;
             cmbNota.SelectedIndex = 0;
-        }
-
-        private void CarregaComboNotacao(List<string> listaSustenidos)
-        {
-            cmbNota.DataSource = listaSustenidos;
         }
 
         private void BtnMontarGrid_Click(object sender, EventArgs e)
@@ -102,8 +99,6 @@ namespace LearningBass
 
                     row.DefaultCellStyle.SelectionForeColor = Color.Red;
                     row.DefaultCellStyle.SelectionBackColor = Color.LightYellow;
-
-                    
                 }
             }
             else
@@ -153,14 +148,28 @@ namespace LearningBass
 
         }
 
+        private void btnGerarEscala_Click(object sender, EventArgs e)
+        {
+            txtEscala.Text = Escalas.GetEscala(cmbSelecaoNotaEscala.Text, cmbTipoEscala.Text);
+        }
+
+
+        private void rbEscalaBemol_CheckedChanged(object sender, EventArgs e)
+        {
+            cmbSelecaoNotaEscala.DataSource = ListaBemois;
+        }
+
+        private void rbEscalaSustenido_CheckedChanged(object sender, EventArgs e)
+        {
+            cmbSelecaoNotaEscala.DataSource = ListaSustenidos;
+        }
+
+
+
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            //DataGridViewRow row = gridNotas.Rows[NumLinhaCelulaSelecionada];
-
             row.DefaultCellStyle.SelectionForeColor = Color.White;
             row.DefaultCellStyle.SelectionBackColor = Color.White;
-
-            //gridNotas.Rows[NumLinhaCelulaSelecionada].Cells[NumColunaCelulaSelecionada].Style.ForeColor = Color.White;
 
             timer1.Stop();
         }

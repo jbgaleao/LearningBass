@@ -48,7 +48,6 @@ namespace LearningBass
                     if (notacao == "Sustenidos (#)")
                     {
                         listaTemp[i] = listaTemp[i].ToString().Substring(0, 3);
-
                     }
                     else
                     {
