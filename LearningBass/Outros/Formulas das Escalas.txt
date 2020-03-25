@@ -1,0 +1,17 @@
+﻿Formulas
+
+Escala Maior
+
+| Tom | Tom | Semi-tom | Tom | Tom | Tom | Semi-tom |
+
+Escala Menor
+
+| Tom | Semi-tom | Tom | Tom | Semi-tom | Tom | Tom |
+
+Escala Diminuta
+
+| Tom | Semi-tom | Tom | Semi-tom | Tom e meio | Semi-tom | Tom |
+
+Escala Dominante
+
+| Tom | Tom | Semi-tom | Tom | Tom | Semi-tom | Tom |

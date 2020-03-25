@@ -122,6 +122,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DBLearningBass.mdf</DependentUpon>
     </Content>
+    <Content Include="Outros\Formulas das Escalas.txt" />
     <None Include="Resources\error.wav" />
     <None Include="Resources\err.wav" />
     <None Include="Resources\Gs4.wav" />
