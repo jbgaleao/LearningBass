@@ -5,9 +5,16 @@ namespace LearningBass
 {
     public class Escalas
     {
-        public static IList<int> PadraoEscalaMenor { get; } = new List<int>() { 2, 1, 2, 2, 1, 2, 2 };
+        public static IList<int> PadraoEscalaMenorNatural { get; } = new List<int>() { 2, 1, 2, 2, 1, 2, 2 };
 
-        public static List<int> PadraoEscalaMaior { get; } = new List<int>() { 2, 2, 1, 2, 2, 2, 1 };
+        public static List<int> PadraoEscalaMaiorNatural { get; } = new List<int>() { 2, 2, 1, 2, 2, 2, 1 };
+
+        public static List<int> PadraoEscalaDiminuta { get; } = new List<int>() { 2, 1, 2, 1, 3, 1, 2 };
+
+        public static List<int> PadraoEscalaDominante { get; } = new List<int>() { 2, 2, 1, 2, 2, 1, 2 };
+
+
+
 
         public static IList<string> SequenciaNotasSustenidos { get; } =
             new List<string>() { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
@@ -46,11 +53,17 @@ namespace LearningBass
             IList<int> PadraoEscala = new List<int>();
             switch (tipoEscala)
             {
-                case "Menor":
-                    PadraoEscala = PadraoEscalaMenor;
+                case "Menor Natural":
+                    PadraoEscala = PadraoEscalaMenorNatural;
                     break;
-                case "Maior":
-                    PadraoEscala = PadraoEscalaMaior;
+                case "Maior Natural":
+                    PadraoEscala = PadraoEscalaMaiorNatural;
+                    break;
+                case "Diminuta":
+                    PadraoEscala = PadraoEscalaDiminuta;
+                    break;
+                case "Dominante":
+                    PadraoEscala = PadraoEscalaDominante;
                     break;
             }
             return PadraoEscala;

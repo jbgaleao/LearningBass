@@ -494,8 +494,10 @@
             this.cmbTipoEscala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoEscala.FormattingEnabled = true;
             this.cmbTipoEscala.Items.AddRange(new object[] {
-            "Menor",
-            "Maior"});
+            "Menor Natural",
+            "Maior Natural",
+            "Diminuta",
+            "Dominante"});
             this.cmbTipoEscala.Location = new System.Drawing.Point(81, 70);
             this.cmbTipoEscala.Name = "cmbTipoEscala";
             this.cmbTipoEscala.Size = new System.Drawing.Size(374, 26);
