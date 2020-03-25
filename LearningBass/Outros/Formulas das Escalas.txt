@@ -15,3 +15,35 @@ Escala Diminuta
 Escala Dominante
 
 | Tom | Tom | Semi-tom | Tom | Tom | Semi-tom | Tom |
+
+
+
+
+
+
+Escala maior
+Tom – Tom – Semitom – Tom – Tom – Tom – Semitom
+
+Escala menor natural
+Tom – Semitom – Tom – Tom – Semitom – Tom – Tom
+
+Escala menor harmônica
+Tom – Semitom – Tom – Tom – Semitom – Tom + Semitom (um tom e meio) – Semitom
+
+Escala menor melódica
+Tom – Semitom – Tom – Tom – Tom – Tom – Semitom
+
+Escala cromática
+Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom
+
+Escala hexatônica
+Tom – Tom – Tom – Tom – Tom
+
+Escala diminuta
+Tom – Semitom – Tom – Semitom – Tom – Semitom – Tom – Semitom
+
+Pentatônica menor
+Tom + Semitom (um tom e meio) – Tom – Tom – Tom + Semitom (um tom e meio)
+
+Pentablues
+Tom + Semitom (um tom e meio) – Tom – Semitom – Semitom – Tom + Semitom (um tom e meio)
