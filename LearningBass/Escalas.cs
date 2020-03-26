@@ -9,7 +9,7 @@ namespace LearningBass
 
         public static List<int> PadraoEscalaMaiorNatural { get; } = new List<int>() { 2, 2, 1, 2, 2, 2, 1 };
 
-        public static List<int> PadraoEscalaDiminuta { get; } = new List<int>() { 2, 1, 2, 1, 3, 1, 2 };
+        public static List<int> PadraoEscalaDiminuta { get; } = new List<int>() { 2, 1, 2, 1, 2, 1, 2 };
 
         public static List<int> PadraoEscalaDominante { get; } = new List<int>() { 2, 2, 1, 2, 2, 1, 2 };
 
@@ -32,6 +32,8 @@ namespace LearningBass
 
         public static string GetEscala(string Tonica, string TipoEscala)
         {
+            DataTable dt = Escalas.GetTipoEscala(TipoEscala);
+
             IList<string> ListaNotas = GetSequenciaDeNotas(Tonica);
             IList<int> tipoEscala = GetTipoEscala(TipoEscala);
 

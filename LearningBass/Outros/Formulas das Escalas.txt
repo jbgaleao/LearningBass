@@ -1,49 +1,56 @@
-﻿Formulas
-
-Escala Maior
-
-| Tom | Tom | Semi-tom | Tom | Tom | Tom | Semi-tom |
-
-Escala Menor
-
-| Tom | Semi-tom | Tom | Tom | Semi-tom | Tom | Tom |
-
-Escala Diminuta
-
-| Tom | Semi-tom | Tom | Semi-tom | Tom e meio | Semi-tom | Tom |
-
-Escala Dominante
-
-| Tom | Tom | Semi-tom | Tom | Tom | Semi-tom | Tom |
-
-
-
-
-
-
-Escala maior
+﻿Escala maior
 Tom – Tom – Semitom – Tom – Tom – Tom – Semitom
+2,2,1,2,2,2,1
+
 
 Escala menor natural
 Tom – Semitom – Tom – Tom – Semitom – Tom – Tom
+2,1,2,2,1,2,2
+
 
 Escala menor harmônica
 Tom – Semitom – Tom – Tom – Semitom – Tom + Semitom (um tom e meio) – Semitom
+2,1,2,2,1,3,1
+
 
 Escala menor melódica
 Tom – Semitom – Tom – Tom – Tom – Tom – Semitom
+2,1,2,2,2,2,1,-2,-2,-1,-2,-2,-1,-2
+
 
 Escala cromática
 Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom
+1,1,1,1,1,1,1,1,1,1,1,1
 
-Escala hexatônica
-Tom – Tom – Tom – Tom – Tom
 
 Escala diminuta
 Tom – Semitom – Tom – Semitom – Tom – Semitom – Tom – Semitom
+2,1,2,1,2,1,2
+
 
 Pentatônica menor
 Tom + Semitom (um tom e meio) – Tom – Tom – Tom + Semitom (um tom e meio)
+3,2,2,3,2
+
+
+Pentatônica maior
+Tom - Tom - Tom + Semitom (um tom e meio) – Tom – Tom + Semitom (um tom e meio)
+2,2,3,2,3
+
 
 Pentablues
 Tom + Semitom (um tom e meio) – Tom – Semitom – Semitom – Tom + Semitom (um tom e meio)
+3,2,1,1,3
+
+
+
+
+Escala Maior
+Escala Menor Natural
+Escala Menor Harmônica
+Escala Menor Melódica
+Escala Cromática
+Escala Diminuta
+Pentatônica Menor
+Pentatônica Maior
+Pentablues
