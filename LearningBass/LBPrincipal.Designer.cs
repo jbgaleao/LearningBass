@@ -32,6 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlFuncionalidades = new System.Windows.Forms.TabControl();
             this.tabMapeamentoBraco = new System.Windows.Forms.TabPage();
             this.gridNotas = new System.Windows.Forms.DataGridView();
@@ -60,20 +65,36 @@
             this.cmbQtdCasas = new System.Windows.Forms.ComboBox();
             this.label64 = new System.Windows.Forms.Label();
             this.tabEscalas = new System.Windows.Forms.TabPage();
-            this.txtEscala = new System.Windows.Forms.TextBox();
-            this.btnGerarEscala = new System.Windows.Forms.Button();
+            this.gridEscala = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.pnEscalas = new System.Windows.Forms.Panel();
+            this.btnGerarEscala = new System.Windows.Forms.Button();
             this.gboxEscala = new System.Windows.Forms.GroupBox();
             this.cmbTipoEscala = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbSelecaoNotaEscala = new System.Windows.Forms.ComboBox();
+            this.cmbNotaTonica = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbEscalaBemol = new System.Windows.Forms.RadioButton();
             this.rbEscalaSustenido = new System.Windows.Forms.RadioButton();
+            this.txtEscala = new System.Windows.Forms.TextBox();
             this.tabAcordes = new System.Windows.Forms.TabPage();
             this.tabDitadoMusical = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlFuncionalidades.SuspendLayout();
             this.tabMapeamentoBraco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotas)).BeginInit();
@@ -81,6 +102,8 @@
             this.gboxInstrumentos.SuspendLayout();
             this.gboxConfiguraNotacao.SuspendLayout();
             this.tabEscalas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.pnEscalas.SuspendLayout();
             this.gboxEscala.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -376,7 +399,6 @@
             this.btnLimpaGrid.TabIndex = 147;
             this.btnLimpaGrid.Text = "Limpar Grid";
             this.btnLimpaGrid.UseVisualStyleBackColor = true;
-            this.btnLimpaGrid.Click += new System.EventHandler(this.btnLimpaGrid_Click);
             // 
             // btnMontarGrid
             // 
@@ -439,8 +461,9 @@
             // tabEscalas
             // 
             this.tabEscalas.BackColor = System.Drawing.Color.White;
-            this.tabEscalas.Controls.Add(this.txtEscala);
-            this.tabEscalas.Controls.Add(this.btnGerarEscala);
+            this.tabEscalas.Controls.Add(this.gridEscala);
+            this.tabEscalas.Controls.Add(this.button1);
+            this.tabEscalas.Controls.Add(this.dataGridView2);
             this.tabEscalas.Controls.Add(this.pnEscalas);
             this.tabEscalas.Location = new System.Drawing.Point(4, 27);
             this.tabEscalas.Name = "tabEscalas";
@@ -449,42 +472,143 @@
             this.tabEscalas.TabIndex = 1;
             this.tabEscalas.Text = "Escalas";
             // 
-            // txtEscala
+            // gridEscala
             // 
-            this.txtEscala.Location = new System.Drawing.Point(130, 353);
-            this.txtEscala.Name = "txtEscala";
-            this.txtEscala.Size = new System.Drawing.Size(253, 24);
-            this.txtEscala.TabIndex = 152;
+            this.gridEscala.AllowUserToResizeColumns = false;
+            this.gridEscala.AllowUserToResizeRows = false;
+            this.gridEscala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridEscala.BackgroundColor = System.Drawing.Color.White;
+            this.gridEscala.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridEscala.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gridEscala.ColumnHeadersHeight = 40;
+            this.gridEscala.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridEscala.DefaultCellStyle = dataGridViewCellStyle5;
+            this.gridEscala.EnableHeadersVisualStyles = false;
+            this.gridEscala.GridColor = System.Drawing.Color.Black;
+            this.gridEscala.Location = new System.Drawing.Point(18, 191);
+            this.gridEscala.MultiSelect = false;
+            this.gridEscala.Name = "gridEscala";
+            this.gridEscala.RowHeadersVisible = false;
+            this.gridEscala.RowHeadersWidth = 40;
+            this.gridEscala.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridEscala.RowTemplate.Height = 40;
+            this.gridEscala.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.gridEscala.ShowCellErrors = false;
+            this.gridEscala.ShowCellToolTips = false;
+            this.gridEscala.ShowEditingIcon = false;
+            this.gridEscala.ShowRowErrors = false;
+            this.gridEscala.Size = new System.Drawing.Size(1189, 106);
+            this.gridEscala.TabIndex = 157;
             // 
-            // btnGerarEscala
+            // button1
             // 
-            this.btnGerarEscala.Location = new System.Drawing.Point(18, 350);
-            this.btnGerarEscala.Name = "btnGerarEscala";
-            this.btnGerarEscala.Size = new System.Drawing.Size(106, 31);
-            this.btnGerarEscala.TabIndex = 0;
-            this.btnGerarEscala.Text = "Gerar Escala";
-            this.btnGerarEscala.UseVisualStyleBackColor = true;
-            this.btnGerarEscala.Click += new System.EventHandler(this.btnGerarEscala_Click);
+            this.button1.Location = new System.Drawing.Point(1351, 191);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 31);
+            this.button1.TabIndex = 156;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView2.ColumnHeadersHeight = 42;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView2.EnableHeadersVisualStyles = false;
+            this.dataGridView2.Location = new System.Drawing.Point(20, 329);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView2.RowHeadersWidth = 60;
+            this.dataGridView2.RowTemplate.Height = 36;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridView2.ShowEditingIcon = false;
+            this.dataGridView2.Size = new System.Drawing.Size(1480, 216);
+            this.dataGridView2.TabIndex = 154;
+            this.dataGridView2.TabStop = false;
             // 
             // pnEscalas
             // 
+            this.pnEscalas.Controls.Add(this.btnGerarEscala);
             this.pnEscalas.Controls.Add(this.gboxEscala);
             this.pnEscalas.Controls.Add(this.groupBox1);
+            this.pnEscalas.Controls.Add(this.txtEscala);
             this.pnEscalas.Location = new System.Drawing.Point(18, 18);
             this.pnEscalas.Name = "pnEscalas";
             this.pnEscalas.Padding = new System.Windows.Forms.Padding(10);
-            this.pnEscalas.Size = new System.Drawing.Size(1073, 312);
+            this.pnEscalas.Size = new System.Drawing.Size(1482, 157);
             this.pnEscalas.TabIndex = 151;
+            // 
+            // btnGerarEscala
+            // 
+            this.btnGerarEscala.Location = new System.Drawing.Point(739, 35);
+            this.btnGerarEscala.Name = "btnGerarEscala";
+            this.btnGerarEscala.Size = new System.Drawing.Size(106, 31);
+            this.btnGerarEscala.TabIndex = 153;
+            this.btnGerarEscala.Text = "Gerar Escala";
+            this.btnGerarEscala.UseVisualStyleBackColor = true;
+            this.btnGerarEscala.Click += new System.EventHandler(this.btnGerarEscala_Click);
             // 
             // gboxEscala
             // 
             this.gboxEscala.Controls.Add(this.cmbTipoEscala);
             this.gboxEscala.Controls.Add(this.label2);
-            this.gboxEscala.Controls.Add(this.cmbSelecaoNotaEscala);
+            this.gboxEscala.Controls.Add(this.cmbNotaTonica);
             this.gboxEscala.Controls.Add(this.label1);
             this.gboxEscala.Location = new System.Drawing.Point(256, 13);
             this.gboxEscala.Name = "gboxEscala";
-            this.gboxEscala.Size = new System.Drawing.Size(477, 286);
+            this.gboxEscala.Size = new System.Drawing.Size(477, 131);
             this.gboxEscala.TabIndex = 151;
             this.gboxEscala.TabStop = false;
             this.gboxEscala.Text = " Escala ";
@@ -512,14 +636,14 @@
             this.label2.TabIndex = 155;
             this.label2.Text = "Tipo:";
             // 
-            // cmbSelecaoNotaEscala
+            // cmbNotaTonica
             // 
-            this.cmbSelecaoNotaEscala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSelecaoNotaEscala.FormattingEnabled = true;
-            this.cmbSelecaoNotaEscala.Location = new System.Drawing.Point(81, 32);
-            this.cmbSelecaoNotaEscala.Name = "cmbSelecaoNotaEscala";
-            this.cmbSelecaoNotaEscala.Size = new System.Drawing.Size(106, 26);
-            this.cmbSelecaoNotaEscala.TabIndex = 154;
+            this.cmbNotaTonica.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNotaTonica.FormattingEnabled = true;
+            this.cmbNotaTonica.Location = new System.Drawing.Point(81, 32);
+            this.cmbNotaTonica.Name = "cmbNotaTonica";
+            this.cmbNotaTonica.Size = new System.Drawing.Size(106, 26);
+            this.cmbNotaTonica.TabIndex = 154;
             // 
             // label1
             // 
@@ -536,7 +660,7 @@
             this.groupBox1.Controls.Add(this.rbEscalaSustenido);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(228, 286);
+            this.groupBox1.Size = new System.Drawing.Size(228, 131);
             this.groupBox1.TabIndex = 151;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " Notação ";
@@ -556,7 +680,7 @@
             // 
             this.rbEscalaSustenido.AutoSize = true;
             this.rbEscalaSustenido.Checked = true;
-            this.rbEscalaSustenido.Location = new System.Drawing.Point(18, 70);
+            this.rbEscalaSustenido.Location = new System.Drawing.Point(18, 71);
             this.rbEscalaSustenido.Name = "rbEscalaSustenido";
             this.rbEscalaSustenido.Size = new System.Drawing.Size(122, 22);
             this.rbEscalaSustenido.TabIndex = 150;
@@ -564,6 +688,13 @@
             this.rbEscalaSustenido.Text = "Sustenidos (#)";
             this.rbEscalaSustenido.UseVisualStyleBackColor = true;
             this.rbEscalaSustenido.CheckedChanged += new System.EventHandler(this.rbEscalaSustenido_CheckedChanged);
+            // 
+            // txtEscala
+            // 
+            this.txtEscala.Location = new System.Drawing.Point(739, 80);
+            this.txtEscala.Name = "txtEscala";
+            this.txtEscala.Size = new System.Drawing.Size(450, 24);
+            this.txtEscala.TabIndex = 152;
             // 
             // tabAcordes
             // 
@@ -588,6 +719,71 @@
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Column5";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Column6";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Column7";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Column8";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Column9";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Column10";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Column11";
+            this.Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Column12";
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "Column13";
+            this.Column13.Name = "Column13";
+            // 
             // LBPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -609,8 +805,10 @@
             this.gboxConfiguraNotacao.ResumeLayout(false);
             this.gboxConfiguraNotacao.PerformLayout();
             this.tabEscalas.ResumeLayout(false);
-            this.tabEscalas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.pnEscalas.ResumeLayout(false);
+            this.pnEscalas.PerformLayout();
             this.gboxEscala.ResumeLayout(false);
             this.gboxEscala.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -652,16 +850,32 @@
         private System.Windows.Forms.RadioButton _01;
         private System.Windows.Forms.CheckBox cboxAtivaLocalizarNota;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btnGerarEscala;
         private System.Windows.Forms.Panel pnEscalas;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtEscala;
         private System.Windows.Forms.RadioButton rbEscalaBemol;
         private System.Windows.Forms.RadioButton rbEscalaSustenido;
         private System.Windows.Forms.GroupBox gboxEscala;
-        private System.Windows.Forms.ComboBox cmbSelecaoNotaEscala;
+        private System.Windows.Forms.ComboBox cmbNotaTonica;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbTipoEscala;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnGerarEscala;
+        internal System.Windows.Forms.DataGridView gridEscala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
     }
 }

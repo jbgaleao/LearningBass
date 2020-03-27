@@ -89,6 +89,7 @@
     <EmbeddedResource Include="LBPrincipal.resx">
       <DependentUpon>LBPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Outros\rascunhosSQL.xlsx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,7 +123,24 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DBLearningBass.mdf</DependentUpon>
     </Content>
+    <Content Include="Outros\ESCALAS MUSICAIS_ As 7 Obrigatórias Para Tocar QUALQUER MÚSICA.html" />
+    <Content Include="Outros\escalas.jpg" />
+    <Content Include="Outros\escalas2.jpg" />
+    <Content Include="Outros\fomaçao das escalas.jfif" />
     <Content Include="Outros\Formulas das Escalas.txt" />
+    <Content Include="Outros\NotaCifradas.txt" />
+    <Content Include="Outros\notasCifradas.txt" />
+    <Content Include="Outros\qryCriaTabela_CodMIDI_NomeNota.sql" />
+    <Content Include="Outros\qryCriaTabela_FormulaEscalas.sql" />
+    <Content Include="Outros\qryCriaTabela___CompleteBassNotes.sql" />
+    <Content Include="Outros\qryCriaTabela___Instrumentos.sql" />
+    <Content Include="Outros\qryCriaTabela___NomeNota_CodMIDI_Freq.sql" />
+    <Content Include="Outros\qryCriaTabela___NumCorda_NomeNota.sql" />
+    <Content Include="Outros\qryInsertTabela___CompleteBassNotes.sql" />
+    <Content Include="Outros\qryInsertTabela___FormulaEscalas.sql" />
+    <Content Include="Outros\qry_CreateTable_xxxx.sql" />
+    <Content Include="Outros\qry_Insert_CompleteBassNotes.sql" />
+    <Content Include="Outros\unnamed.jpg" />
     <None Include="Resources\error.wav" />
     <None Include="Resources\err.wav" />
     <None Include="Resources\Gs4.wav" />
@@ -196,5 +214,6 @@
     <None Include="Resources\A2.wav" />
     <None Include="Resources\A1.wav" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,11 +12,21 @@ namespace LearningBass
     {
         private bool LocalizarNota = false;
         private DataGridViewRow row = new DataGridViewRow();
-
+        int NumLinhaCelulaSelecionada;
+        int NumColunaCelulaSelecionada;
         string NotaProcurada = "";
+
         List<string> ListaSustenidos = new List<string> { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
         List<string> ListaBemois = new List<string> { "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B" };
-        int NumLinhaCelulaSelecionada, NumColunaCelulaSelecionada;
+        List<string> ListaTiposEscalas = new List<string>()
+        {
+            "Escala Maior","Escala Menor Natural","Escala Menor Harmônica","Escala Menor Melódica",
+            "Escala Cromática","Escala Diminuta","Pentatônica Menor","Pentatônica Maior","Pentablues"
+        };
+
+
+
+
 
         public LBPrincipal()
         {
@@ -26,11 +36,11 @@ namespace LearningBass
         private void Form1_Load(object sender, EventArgs e)
         {
             cmbNota.DataSource = ListaSustenidos;
-            cmbSelecaoNotaEscala.DataSource = ListaSustenidos;
+            cmbNotaTonica.DataSource = ListaSustenidos;
+            cmbTipoEscala.DataSource = ListaTiposEscalas;
 
-            cmbSelecaoNotaEscala.SelectedIndex = 0;
+            cmbNotaTonica.SelectedIndex = 0;
             cmbTipoEscala.SelectedIndex = 0;
-
 
             cmbQtdCasas.SelectedIndex = 0;
             cmbQtdCordas.SelectedIndex = 0;
@@ -143,28 +153,25 @@ namespace LearningBass
             }
         }
 
-        private void btnLimpaGrid_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGerarEscala_Click(object sender, EventArgs e)
         {
-            txtEscala.Text = Escalas.GetEscala(cmbSelecaoNotaEscala.Text, cmbTipoEscala.Text);
+            txtEscala.Text = Escalas.GetEscala(cmbNotaTonica.Text, cmbTipoEscala.Text, GetNotacao());
         }
 
+        private bool GetNotacao()
+        {
+            return (rbEscalaSustenido.Checked) ? true : false;
+        }
 
         private void rbEscalaBemol_CheckedChanged(object sender, EventArgs e)
         {
-            cmbSelecaoNotaEscala.DataSource = ListaBemois;
+            cmbNotaTonica.DataSource = ListaBemois;
         }
 
         private void rbEscalaSustenido_CheckedChanged(object sender, EventArgs e)
         {
-            cmbSelecaoNotaEscala.DataSource = ListaSustenidos;
+            cmbNotaTonica.DataSource = ListaSustenidos;
         }
-
-
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
@@ -173,5 +180,25 @@ namespace LearningBass
 
             timer1.Stop();
         }
+
+
+
+
+        public void MontaGridEscala(string str, List<int> listaPadraoEscala)
+        {
+            int i = 0;
+            int j = 0;
+            gridEscala.Rows[0].Cells[i].Value = str[j].ToString();
+            gridEscala.Columns[0].HeaderText= str[j].ToString();
+
+            foreach (int item in listaPadraoEscala)
+            {
+                i += item;
+                j++;
+                gridEscala.Rows[0].Cells[i].Value = str[j].ToString();
+                gridEscala.Columns[i].HeaderText = str[j].ToString();
+            }
+        }
+
     }
 }
