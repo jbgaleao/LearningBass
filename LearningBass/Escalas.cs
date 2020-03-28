@@ -39,9 +39,9 @@ namespace LearningBass
         #endregion
 
 
-        public static string GetEscala(string Tonica, string TipoEscala, bool rbSustenido)
+        public static string GetEscala(string Tonica, DataTable dt, bool rbSustenido)
         {
-            DataTable dt = Consultas.RetornaEscala(TipoEscala);
+            //DataTable dt = Consultas.RetornaEscala(TipoEscala);
             string strEscala = dt.Rows[0][0].ToString();
 
             string[] aux = strEscala.Split(',');
@@ -56,11 +56,6 @@ namespace LearningBass
 
             IList<string> ListaSequenciaNotas = GetSequenciaDeNotas(rbSustenido);
 
-
-
-
-
-
             int first = ListaSequenciaNotas.IndexOf(Tonica);
             str = Tonica + ", ";
 
@@ -73,8 +68,8 @@ namespace LearningBass
 
             str = str.Substring(0, str.Length - 2);
 
-            LBPrincipal lbprincipal = new LBPrincipal();
-            lbprincipal.MontaGridEscala(str, ListaPadraoEscala);
+            //LBPrincipal lbprincipal = new LBPrincipal();
+            //lbprincipal.MontaGridEscala(str, ListaPadraoEscala);
 
             return str;
         }

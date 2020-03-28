@@ -37,6 +37,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlFuncionalidades = new System.Windows.Forms.TabControl();
             this.tabMapeamentoBraco = new System.Windows.Forms.TabPage();
             this.gridNotas = new System.Windows.Forms.DataGridView();
@@ -65,10 +67,9 @@
             this.cmbQtdCasas = new System.Windows.Forms.ComboBox();
             this.label64 = new System.Windows.Forms.Label();
             this.tabEscalas = new System.Windows.Forms.TabPage();
-            this.gridEscala = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.grid2 = new System.Windows.Forms.DataGridView();
             this.pnEscalas = new System.Windows.Forms.Panel();
+            this.gridEscala = new System.Windows.Forms.DataGridView();
             this.btnGerarEscala = new System.Windows.Forms.Button();
             this.gboxEscala = new System.Windows.Forms.GroupBox();
             this.cmbTipoEscala = new System.Windows.Forms.ComboBox();
@@ -82,19 +83,7 @@
             this.tabAcordes = new System.Windows.Forms.TabPage();
             this.tabDitadoMusical = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btTocarNotas = new System.Windows.Forms.Button();
             this.tabControlFuncionalidades.SuspendLayout();
             this.tabMapeamentoBraco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotas)).BeginInit();
@@ -102,9 +91,9 @@
             this.gboxInstrumentos.SuspendLayout();
             this.gboxConfiguraNotacao.SuspendLayout();
             this.tabEscalas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid2)).BeginInit();
             this.pnEscalas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).BeginInit();
             this.gboxEscala.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -461,9 +450,8 @@
             // tabEscalas
             // 
             this.tabEscalas.BackColor = System.Drawing.Color.White;
-            this.tabEscalas.Controls.Add(this.gridEscala);
-            this.tabEscalas.Controls.Add(this.button1);
-            this.tabEscalas.Controls.Add(this.dataGridView2);
+            this.tabEscalas.Controls.Add(this.btTocarNotas);
+            this.tabEscalas.Controls.Add(this.grid2);
             this.tabEscalas.Controls.Add(this.pnEscalas);
             this.tabEscalas.Location = new System.Drawing.Point(4, 27);
             this.tabEscalas.Name = "tabEscalas";
@@ -472,114 +460,56 @@
             this.tabEscalas.TabIndex = 1;
             this.tabEscalas.Text = "Escalas";
             // 
-            // gridEscala
+            // grid2
             // 
-            this.gridEscala.AllowUserToResizeColumns = false;
-            this.gridEscala.AllowUserToResizeRows = false;
-            this.gridEscala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridEscala.BackgroundColor = System.Drawing.Color.White;
-            this.gridEscala.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grid2.AllowUserToAddRows = false;
+            this.grid2.AllowUserToDeleteRows = false;
+            this.grid2.AllowUserToResizeColumns = false;
+            this.grid2.AllowUserToResizeRows = false;
+            this.grid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grid2.BackgroundColor = System.Drawing.Color.White;
+            this.grid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PeachPuff;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridEscala.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.gridEscala.ColumnHeadersHeight = 40;
-            this.gridEscala.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13});
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.grid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.grid2.ColumnHeadersHeight = 42;
+            this.grid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.OldLace;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridEscala.DefaultCellStyle = dataGridViewCellStyle5;
-            this.gridEscala.EnableHeadersVisualStyles = false;
-            this.gridEscala.GridColor = System.Drawing.Color.Black;
-            this.gridEscala.Location = new System.Drawing.Point(18, 191);
-            this.gridEscala.MultiSelect = false;
-            this.gridEscala.Name = "gridEscala";
-            this.gridEscala.RowHeadersVisible = false;
-            this.gridEscala.RowHeadersWidth = 40;
-            this.gridEscala.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.gridEscala.RowTemplate.Height = 40;
-            this.gridEscala.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.gridEscala.ShowCellErrors = false;
-            this.gridEscala.ShowCellToolTips = false;
-            this.gridEscala.ShowEditingIcon = false;
-            this.gridEscala.ShowRowErrors = false;
-            this.gridEscala.Size = new System.Drawing.Size(1189, 106);
-            this.gridEscala.TabIndex = 157;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1351, 191);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 31);
-            this.button1.TabIndex = 156;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.grid2.DefaultCellStyle = dataGridViewCellStyle5;
+            this.grid2.EnableHeadersVisualStyles = false;
+            this.grid2.Location = new System.Drawing.Point(18, 193);
+            this.grid2.Name = "grid2";
+            this.grid2.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView2.ColumnHeadersHeight = 42;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.Location = new System.Drawing.Point(20, 329);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView2.RowHeadersWidth = 60;
-            this.dataGridView2.RowTemplate.Height = 36;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView2.ShowEditingIcon = false;
-            this.dataGridView2.Size = new System.Drawing.Size(1480, 216);
-            this.dataGridView2.TabIndex = 154;
-            this.dataGridView2.TabStop = false;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.grid2.RowHeadersVisible = false;
+            this.grid2.RowHeadersWidth = 60;
+            this.grid2.RowTemplate.DividerHeight = 10;
+            this.grid2.RowTemplate.Height = 60;
+            this.grid2.RowTemplate.ReadOnly = true;
+            this.grid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.grid2.ShowEditingIcon = false;
+            this.grid2.Size = new System.Drawing.Size(1349, 105);
+            this.grid2.TabIndex = 154;
+            this.grid2.TabStop = false;
             // 
             // pnEscalas
             // 
+            this.pnEscalas.Controls.Add(this.gridEscala);
             this.pnEscalas.Controls.Add(this.btnGerarEscala);
             this.pnEscalas.Controls.Add(this.gboxEscala);
             this.pnEscalas.Controls.Add(this.groupBox1);
@@ -590,9 +520,59 @@
             this.pnEscalas.Size = new System.Drawing.Size(1482, 157);
             this.pnEscalas.TabIndex = 151;
             // 
+            // gridEscala
+            // 
+            this.gridEscala.AllowUserToAddRows = false;
+            this.gridEscala.AllowUserToDeleteRows = false;
+            this.gridEscala.AllowUserToResizeColumns = false;
+            this.gridEscala.AllowUserToResizeRows = false;
+            this.gridEscala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridEscala.BackgroundColor = System.Drawing.Color.White;
+            this.gridEscala.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridEscala.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridEscala.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.gridEscala.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridEscala.DefaultCellStyle = dataGridViewCellStyle8;
+            this.gridEscala.EnableHeadersVisualStyles = false;
+            this.gridEscala.GridColor = System.Drawing.Color.Black;
+            this.gridEscala.Location = new System.Drawing.Point(739, 72);
+            this.gridEscala.MultiSelect = false;
+            this.gridEscala.Name = "gridEscala";
+            this.gridEscala.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridEscala.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.gridEscala.RowHeadersVisible = false;
+            this.gridEscala.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.gridEscala.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.gridEscala.RowTemplate.Height = 40;
+            this.gridEscala.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.gridEscala.Size = new System.Drawing.Size(610, 72);
+            this.gridEscala.TabIndex = 158;
+            // 
             // btnGerarEscala
             // 
-            this.btnGerarEscala.Location = new System.Drawing.Point(739, 35);
+            this.btnGerarEscala.Location = new System.Drawing.Point(739, 32);
             this.btnGerarEscala.Name = "btnGerarEscala";
             this.btnGerarEscala.Size = new System.Drawing.Size(106, 31);
             this.btnGerarEscala.TabIndex = 153;
@@ -691,7 +671,7 @@
             // 
             // txtEscala
             // 
-            this.txtEscala.Location = new System.Drawing.Point(739, 80);
+            this.txtEscala.Location = new System.Drawing.Point(875, 35);
             this.txtEscala.Name = "txtEscala";
             this.txtEscala.Size = new System.Drawing.Size(450, 24);
             this.txtEscala.TabIndex = 152;
@@ -719,70 +699,14 @@
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // Column1
+            // btTocarNotas
             // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.Name = "Column9";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Column10";
-            this.Column10.Name = "Column10";
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Column11";
-            this.Column11.Name = "Column11";
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Column12";
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "Column13";
-            this.Column13.Name = "Column13";
+            this.btTocarNotas.Location = new System.Drawing.Point(1394, 193);
+            this.btTocarNotas.Name = "btTocarNotas";
+            this.btTocarNotas.Size = new System.Drawing.Size(106, 51);
+            this.btTocarNotas.TabIndex = 160;
+            this.btTocarNotas.Text = "Executar Escala";
+            this.btTocarNotas.UseVisualStyleBackColor = true;
             // 
             // LBPrincipal
             // 
@@ -805,10 +729,10 @@
             this.gboxConfiguraNotacao.ResumeLayout(false);
             this.gboxConfiguraNotacao.PerformLayout();
             this.tabEscalas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid2)).EndInit();
             this.pnEscalas.ResumeLayout(false);
             this.pnEscalas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).EndInit();
             this.gboxEscala.ResumeLayout(false);
             this.gboxEscala.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -860,22 +784,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbTipoEscala;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView grid2;
         private System.Windows.Forms.Button btnGerarEscala;
-        internal System.Windows.Forms.DataGridView gridEscala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridView gridEscala;
+        private System.Windows.Forms.Button btTocarNotas;
     }
 }

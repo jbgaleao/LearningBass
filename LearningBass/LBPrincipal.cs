@@ -155,12 +155,41 @@ namespace LearningBass
 
         private void btnGerarEscala_Click(object sender, EventArgs e)
         {
-            txtEscala.Text = Escalas.GetEscala(cmbNotaTonica.Text, cmbTipoEscala.Text, GetNotacao());
-        }
+            bool notacao = (rbEscalaSustenido.Checked) ? true : false;
+            DataTable dt = Consultas.RetornaEscala(cmbTipoEscala.Text);
+            string NotasDaEscala = Escalas.GetEscala(cmbNotaTonica.Text, dt, notacao);
+            txtEscala.Text = NotasDaEscala;
 
-        private bool GetNotacao()
-        {
-            return (rbEscalaSustenido.Checked) ? true : false;
+            // vet-NotasDaEscala = C,D,E,F,G,A,B
+            // vet-FormulaEscala = 2,2,1,2,2,2,1
+
+            string[] vetNotasDaEscala = NotasDaEscala.Split(',');
+            string[] vetFormulaEscala = dt.Rows[0][0].ToString().Split(',');
+            string[] vetGridEscala = new string[13];
+
+            vetGridEscala[0] = vetNotasDaEscala[0].ToString();
+            int j = 0;
+            int k = 1;
+
+            for (int i = 0; i < vetFormulaEscala.Length; i++)
+            {
+                j += Convert.ToInt16(vetFormulaEscala[i]);
+                vetGridEscala[j] = vetNotasDaEscala[k].ToString();
+                k++;
+            }
+
+            DataTable dtGridEscala = new DataTable();
+            for (int cont = 1; cont <= 13; cont++)
+            {
+                dtGridEscala.Columns.Add(cont.ToString(), typeof(string));
+            }
+
+            dtGridEscala.Rows.Add(vetGridEscala);
+            gridEscala.DataSource = dtGridEscala;
+            grid2.DataSource = dtGridEscala;
+
+            gridEscala.ClearSelection();
+            grid2.ClearSelection();
         }
 
         private void rbEscalaBemol_CheckedChanged(object sender, EventArgs e)
@@ -179,25 +208,6 @@ namespace LearningBass
             row.DefaultCellStyle.SelectionBackColor = Color.White;
 
             timer1.Stop();
-        }
-
-
-
-
-        public void MontaGridEscala(string str, List<int> listaPadraoEscala)
-        {
-            int i = 0;
-            int j = 0;
-            gridEscala.Rows[0].Cells[i].Value = str[j].ToString();
-            gridEscala.Columns[0].HeaderText= str[j].ToString();
-
-            foreach (int item in listaPadraoEscala)
-            {
-                i += item;
-                j++;
-                gridEscala.Rows[0].Cells[i].Value = str[j].ToString();
-                gridEscala.Columns[i].HeaderText = str[j].ToString();
-            }
         }
 
     }
