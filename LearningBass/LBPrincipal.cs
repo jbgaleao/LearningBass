@@ -10,11 +10,16 @@ namespace LearningBass
 {
     public partial class LBPrincipal : Form
     {
+        #region Variaveis da Classe
         private bool LocalizarNota = false;
         private DataGridViewRow row = new DataGridViewRow();
         int NumLinhaCelulaSelecionada;
         int NumColunaCelulaSelecionada;
         string NotaProcurada = "";
+
+        string[] vetNotasDaEscala = new string[] { };
+        string[] vetFormulaEscala = new string[] { };
+        string[] vetGridEscala = new string[] { };
 
         List<string> ListaSustenidos = new List<string> { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
         List<string> ListaBemois = new List<string> { "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B" };
@@ -23,10 +28,7 @@ namespace LearningBass
             "Escala Maior","Escala Menor Natural","Escala Menor Harmônica","Escala Menor Melódica",
             "Escala Cromática","Escala Diminuta","Pentatônica Menor","Pentatônica Maior","Pentablues"
         };
-
-
-
-
+        #endregion
 
         public LBPrincipal()
         {
@@ -158,14 +160,14 @@ namespace LearningBass
             bool notacao = (rbEscalaSustenido.Checked) ? true : false;
             DataTable dt = Consultas.RetornaEscala(cmbTipoEscala.Text);
             string NotasDaEscala = Escalas.GetEscala(cmbNotaTonica.Text, dt, notacao);
-            txtEscala.Text = NotasDaEscala;
+
 
             // vet-NotasDaEscala = C,D,E,F,G,A,B
             // vet-FormulaEscala = 2,2,1,2,2,2,1
 
-            string[] vetNotasDaEscala = NotasDaEscala.Split(',');
-            string[] vetFormulaEscala = dt.Rows[0][0].ToString().Split(',');
-            string[] vetGridEscala = new string[13];
+            vetNotasDaEscala = NotasDaEscala.Split(',');
+            vetFormulaEscala = dt.Rows[0][0].ToString().Split(',');
+            vetGridEscala = new string[13];
 
             vetGridEscala[0] = vetNotasDaEscala[0].ToString();
             int j = 0;
@@ -198,19 +200,19 @@ namespace LearningBass
 
 
             dtGridEscala.Rows.Add(vetGridEscala);
+            //gridEscala.DataSource = dtGridEscala;
             gridEscala.DataSource = dtGridEscala;
-            grid2.DataSource = dtGridEscala;
 
+            //gridEscala.ClearSelection();
             gridEscala.ClearSelection();
-            grid2.ClearSelection();
         }
 
-        private void rbEscalaBemol_CheckedChanged(object sender, EventArgs e)
+        private void RbEscalaBemol_CheckedChanged(object sender, EventArgs e)
         {
             cmbNotaTonica.DataSource = ListaBemois;
         }
 
-        private void rbEscalaSustenido_CheckedChanged(object sender, EventArgs e)
+        private void RbEscalaSustenido_CheckedChanged(object sender, EventArgs e)
         {
             cmbNotaTonica.DataSource = ListaSustenidos;
         }
@@ -223,5 +225,15 @@ namespace LearningBass
             timer1.Stop();
         }
 
+        private void BtTocarNotas_Click(object sender, EventArgs e)
+        {
+            Stream strOK;
+            foreach (string item in vetNotasDaEscala)
+            {
+                strOK = (Stream)Properties.Resources.ResourceManager.GetObject((item + "2").ToString().Replace("#", "s"), null);
+                SoundPlayer SonidoOK = new SoundPlayer(strOK);
+                SonidoOK.Play();
+            }
+        }
     }
 }

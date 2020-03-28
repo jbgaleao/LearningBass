@@ -25,7 +25,7 @@ Semitom – Semitom – Semitom – Semitom – Semitom – Semitom – Semitom 
 
 Escala diminuta
 Tom – Semitom – Tom – Semitom – Tom – Semitom – Tom – Semitom
-2,1,2,1,2,1,2
+2,1,2,1,2,1,2,1
 
 
 Pentatônica menor

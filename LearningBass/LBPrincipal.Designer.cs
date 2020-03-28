@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlFuncionalidades = new System.Windows.Forms.TabControl();
             this.tabMapeamentoBraco = new System.Windows.Forms.TabPage();
             this.gridNotas = new System.Windows.Forms.DataGridView();
@@ -67,11 +63,11 @@
             this.cmbQtdCasas = new System.Windows.Forms.ComboBox();
             this.label64 = new System.Windows.Forms.Label();
             this.tabEscalas = new System.Windows.Forms.TabPage();
-            this.grid2 = new System.Windows.Forms.DataGridView();
-            this.pnEscalas = new System.Windows.Forms.Panel();
+            this.btTocarNotas = new System.Windows.Forms.Button();
             this.gridEscala = new System.Windows.Forms.DataGridView();
-            this.btnGerarEscala = new System.Windows.Forms.Button();
+            this.pnEscalas = new System.Windows.Forms.Panel();
             this.gboxEscala = new System.Windows.Forms.GroupBox();
+            this.btnGerarEscala = new System.Windows.Forms.Button();
             this.cmbTipoEscala = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbNotaTonica = new System.Windows.Forms.ComboBox();
@@ -79,11 +75,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbEscalaBemol = new System.Windows.Forms.RadioButton();
             this.rbEscalaSustenido = new System.Windows.Forms.RadioButton();
-            this.txtEscala = new System.Windows.Forms.TextBox();
             this.tabAcordes = new System.Windows.Forms.TabPage();
             this.tabDitadoMusical = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btTocarNotas = new System.Windows.Forms.Button();
             this.tabControlFuncionalidades.SuspendLayout();
             this.tabMapeamentoBraco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotas)).BeginInit();
@@ -91,9 +85,8 @@
             this.gboxInstrumentos.SuspendLayout();
             this.gboxConfiguraNotacao.SuspendLayout();
             this.tabEscalas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grid2)).BeginInit();
-            this.pnEscalas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).BeginInit();
+            this.pnEscalas.SuspendLayout();
             this.gboxEscala.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -131,32 +124,32 @@
             this.gridNotas.BackgroundColor = System.Drawing.Color.White;
             this.gridNotas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridNotas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gridNotas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gridNotas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.gridNotas.ColumnHeadersHeight = 42;
             this.gridNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridNotas.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridNotas.DefaultCellStyle = dataGridViewCellStyle17;
             this.gridNotas.EnableHeadersVisualStyles = false;
             this.gridNotas.Location = new System.Drawing.Point(16, 276);
             this.gridNotas.Name = "gridNotas";
             this.gridNotas.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridNotas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridNotas.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.gridNotas.RowHeadersWidth = 60;
             this.gridNotas.RowTemplate.Height = 36;
             this.gridNotas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
@@ -451,7 +444,7 @@
             // 
             this.tabEscalas.BackColor = System.Drawing.Color.White;
             this.tabEscalas.Controls.Add(this.btTocarNotas);
-            this.tabEscalas.Controls.Add(this.grid2);
+            this.tabEscalas.Controls.Add(this.gridEscala);
             this.tabEscalas.Controls.Add(this.pnEscalas);
             this.tabEscalas.Location = new System.Drawing.Point(4, 27);
             this.tabEscalas.Name = "tabEscalas";
@@ -460,65 +453,15 @@
             this.tabEscalas.TabIndex = 1;
             this.tabEscalas.Text = "Escalas";
             // 
-            // grid2
+            // btTocarNotas
             // 
-            this.grid2.AllowUserToAddRows = false;
-            this.grid2.AllowUserToDeleteRows = false;
-            this.grid2.AllowUserToResizeColumns = false;
-            this.grid2.AllowUserToResizeRows = false;
-            this.grid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grid2.BackgroundColor = System.Drawing.Color.White;
-            this.grid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.grid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PeachPuff;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.grid2.ColumnHeadersHeight = 42;
-            this.grid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.OldLace;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid2.DefaultCellStyle = dataGridViewCellStyle5;
-            this.grid2.EnableHeadersVisualStyles = false;
-            this.grid2.Location = new System.Drawing.Point(18, 193);
-            this.grid2.Name = "grid2";
-            this.grid2.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.grid2.RowHeadersVisible = false;
-            this.grid2.RowHeadersWidth = 60;
-            this.grid2.RowTemplate.DividerHeight = 10;
-            this.grid2.RowTemplate.Height = 60;
-            this.grid2.RowTemplate.ReadOnly = true;
-            this.grid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.grid2.ShowEditingIcon = false;
-            this.grid2.Size = new System.Drawing.Size(1349, 105);
-            this.grid2.TabIndex = 154;
-            this.grid2.TabStop = false;
-            // 
-            // pnEscalas
-            // 
-            this.pnEscalas.Controls.Add(this.gridEscala);
-            this.pnEscalas.Controls.Add(this.btnGerarEscala);
-            this.pnEscalas.Controls.Add(this.gboxEscala);
-            this.pnEscalas.Controls.Add(this.groupBox1);
-            this.pnEscalas.Controls.Add(this.txtEscala);
-            this.pnEscalas.Location = new System.Drawing.Point(18, 18);
-            this.pnEscalas.Name = "pnEscalas";
-            this.pnEscalas.Padding = new System.Windows.Forms.Padding(10);
-            this.pnEscalas.Size = new System.Drawing.Size(1482, 157);
-            this.pnEscalas.TabIndex = 151;
+            this.btTocarNotas.Location = new System.Drawing.Point(1394, 193);
+            this.btTocarNotas.Name = "btTocarNotas";
+            this.btTocarNotas.Size = new System.Drawing.Size(106, 51);
+            this.btTocarNotas.TabIndex = 160;
+            this.btTocarNotas.Text = "Executar Escala";
+            this.btTocarNotas.UseVisualStyleBackColor = true;
+            this.btTocarNotas.Click += new System.EventHandler(this.BtTocarNotas_Click);
             // 
             // gridEscala
             // 
@@ -530,58 +473,56 @@
             this.gridEscala.BackgroundColor = System.Drawing.Color.White;
             this.gridEscala.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridEscala.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridEscala.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.PeachPuff;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gridEscala.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.gridEscala.ColumnHeadersHeight = 42;
             this.gridEscala.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridEscala.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.OldLace;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridEscala.DefaultCellStyle = dataGridViewCellStyle14;
             this.gridEscala.EnableHeadersVisualStyles = false;
-            this.gridEscala.GridColor = System.Drawing.Color.Black;
-            this.gridEscala.Location = new System.Drawing.Point(739, 72);
-            this.gridEscala.MultiSelect = false;
+            this.gridEscala.Location = new System.Drawing.Point(18, 193);
             this.gridEscala.Name = "gridEscala";
             this.gridEscala.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridEscala.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridEscala.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.gridEscala.RowHeadersVisible = false;
-            this.gridEscala.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.gridEscala.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.gridEscala.RowTemplate.Height = 40;
-            this.gridEscala.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.gridEscala.Size = new System.Drawing.Size(610, 72);
-            this.gridEscala.TabIndex = 158;
+            this.gridEscala.RowHeadersWidth = 60;
+            this.gridEscala.RowTemplate.DividerHeight = 10;
+            this.gridEscala.RowTemplate.Height = 60;
+            this.gridEscala.RowTemplate.ReadOnly = true;
+            this.gridEscala.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.gridEscala.ShowEditingIcon = false;
+            this.gridEscala.Size = new System.Drawing.Size(1325, 105);
+            this.gridEscala.TabIndex = 154;
+            this.gridEscala.TabStop = false;
             // 
-            // btnGerarEscala
+            // pnEscalas
             // 
-            this.btnGerarEscala.Location = new System.Drawing.Point(739, 32);
-            this.btnGerarEscala.Name = "btnGerarEscala";
-            this.btnGerarEscala.Size = new System.Drawing.Size(106, 31);
-            this.btnGerarEscala.TabIndex = 153;
-            this.btnGerarEscala.Text = "Gerar Escala";
-            this.btnGerarEscala.UseVisualStyleBackColor = true;
-            this.btnGerarEscala.Click += new System.EventHandler(this.btnGerarEscala_Click);
+            this.pnEscalas.Controls.Add(this.gboxEscala);
+            this.pnEscalas.Controls.Add(this.groupBox1);
+            this.pnEscalas.Location = new System.Drawing.Point(18, 18);
+            this.pnEscalas.Name = "pnEscalas";
+            this.pnEscalas.Padding = new System.Windows.Forms.Padding(10);
+            this.pnEscalas.Size = new System.Drawing.Size(1482, 157);
+            this.pnEscalas.TabIndex = 151;
             // 
             // gboxEscala
             // 
+            this.gboxEscala.Controls.Add(this.btnGerarEscala);
             this.gboxEscala.Controls.Add(this.cmbTipoEscala);
             this.gboxEscala.Controls.Add(this.label2);
             this.gboxEscala.Controls.Add(this.cmbNotaTonica);
@@ -592,6 +533,16 @@
             this.gboxEscala.TabIndex = 151;
             this.gboxEscala.TabStop = false;
             this.gboxEscala.Text = " Escala ";
+            // 
+            // btnGerarEscala
+            // 
+            this.btnGerarEscala.Location = new System.Drawing.Point(349, 30);
+            this.btnGerarEscala.Name = "btnGerarEscala";
+            this.btnGerarEscala.Size = new System.Drawing.Size(106, 31);
+            this.btnGerarEscala.TabIndex = 156;
+            this.btnGerarEscala.Text = "Gerar Escala";
+            this.btnGerarEscala.UseVisualStyleBackColor = true;
+            this.btnGerarEscala.Click += new System.EventHandler(this.btnGerarEscala_Click);
             // 
             // cmbTipoEscala
             // 
@@ -610,7 +561,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 73);
+            this.label2.Location = new System.Drawing.Point(18, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 18);
             this.label2.TabIndex = 155;
@@ -628,7 +579,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 35);
+            this.label1.Location = new System.Drawing.Point(18, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 18);
             this.label1.TabIndex = 155;
@@ -654,7 +605,7 @@
             this.rbEscalaBemol.TabIndex = 150;
             this.rbEscalaBemol.Text = "Bemóis (b)";
             this.rbEscalaBemol.UseVisualStyleBackColor = true;
-            this.rbEscalaBemol.CheckedChanged += new System.EventHandler(this.rbEscalaBemol_CheckedChanged);
+            this.rbEscalaBemol.CheckedChanged += new System.EventHandler(this.RbEscalaBemol_CheckedChanged);
             // 
             // rbEscalaSustenido
             // 
@@ -667,14 +618,7 @@
             this.rbEscalaSustenido.TabStop = true;
             this.rbEscalaSustenido.Text = "Sustenidos (#)";
             this.rbEscalaSustenido.UseVisualStyleBackColor = true;
-            this.rbEscalaSustenido.CheckedChanged += new System.EventHandler(this.rbEscalaSustenido_CheckedChanged);
-            // 
-            // txtEscala
-            // 
-            this.txtEscala.Location = new System.Drawing.Point(875, 35);
-            this.txtEscala.Name = "txtEscala";
-            this.txtEscala.Size = new System.Drawing.Size(450, 24);
-            this.txtEscala.TabIndex = 152;
+            this.rbEscalaSustenido.CheckedChanged += new System.EventHandler(this.RbEscalaSustenido_CheckedChanged);
             // 
             // tabAcordes
             // 
@@ -699,15 +643,6 @@
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // btTocarNotas
-            // 
-            this.btTocarNotas.Location = new System.Drawing.Point(1394, 193);
-            this.btTocarNotas.Name = "btTocarNotas";
-            this.btTocarNotas.Size = new System.Drawing.Size(106, 51);
-            this.btTocarNotas.TabIndex = 160;
-            this.btTocarNotas.Text = "Executar Escala";
-            this.btTocarNotas.UseVisualStyleBackColor = true;
-            // 
             // LBPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -729,10 +664,8 @@
             this.gboxConfiguraNotacao.ResumeLayout(false);
             this.gboxConfiguraNotacao.PerformLayout();
             this.tabEscalas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grid2)).EndInit();
-            this.pnEscalas.ResumeLayout(false);
-            this.pnEscalas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).EndInit();
+            this.pnEscalas.ResumeLayout(false);
             this.gboxEscala.ResumeLayout(false);
             this.gboxEscala.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -776,7 +709,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel pnEscalas;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtEscala;
         private System.Windows.Forms.RadioButton rbEscalaBemol;
         private System.Windows.Forms.RadioButton rbEscalaSustenido;
         private System.Windows.Forms.GroupBox gboxEscala;
@@ -784,9 +716,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbTipoEscala;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView grid2;
-        private System.Windows.Forms.Button btnGerarEscala;
         private System.Windows.Forms.DataGridView gridEscala;
         private System.Windows.Forms.Button btTocarNotas;
+        private System.Windows.Forms.Button btnGerarEscala;
     }
 }
