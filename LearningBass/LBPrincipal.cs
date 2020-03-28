@@ -178,11 +178,24 @@ namespace LearningBass
                 k++;
             }
 
+
+            // Calcula o numero de colunas para serem criadas dinamicamente
             DataTable dtGridEscala = new DataTable();
-            for (int cont = 1; cont <= 13; cont++)
+            int TotalDeColunas = 1;
+            foreach (string item in vetFormulaEscala)
+            {
+                TotalDeColunas += Math.Abs(Convert.ToInt32(item));
+            }
+            // -------------------------------------------------------------
+
+
+            // cria a qtd de colunas calculada acima
+            for (int cont = 1; cont <= TotalDeColunas; cont++)
             {
                 dtGridEscala.Columns.Add(cont.ToString(), typeof(string));
             }
+            // -------------------------------------------------------------
+
 
             dtGridEscala.Rows.Add(vetGridEscala);
             gridEscala.DataSource = dtGridEscala;

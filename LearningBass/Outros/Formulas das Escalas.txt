@@ -15,7 +15,7 @@ Tom – Semitom – Tom – Tom – Semitom – Tom + Semitom (um tom e meio) �
 
 Escala menor melódica
 Tom – Semitom – Tom – Tom – Tom – Tom – Semitom
-2,1,2,2,2,2,1,-2,-2,-1,-2,-2,-1,-2
+2,1,2,2,2,2,1
 
 
 Escala cromática
