@@ -28,6 +28,10 @@ namespace LearningBass
             "Escala Maior","Escala Menor Natural","Escala Menor Harmônica","Escala Menor Melódica",
             "Escala Cromática","Escala Diminuta","Pentatônica Menor","Pentatônica Maior","Pentablues"
         };
+
+        ExecSom exSom;
+        Stream streamNota;
+
         #endregion
 
         public LBPrincipal()
@@ -165,6 +169,8 @@ namespace LearningBass
             // vet-NotasDaEscala = C,D,E,F,G,A,B
             // vet-FormulaEscala = 2,2,1,2,2,2,1
 
+
+
             vetNotasDaEscala = NotasDaEscala.Split(',');
             vetFormulaEscala = dt.Rows[0][0].ToString().Split(',');
             vetGridEscala = new string[13];
@@ -200,10 +206,8 @@ namespace LearningBass
 
 
             dtGridEscala.Rows.Add(vetGridEscala);
-            //gridEscala.DataSource = dtGridEscala;
             gridEscala.DataSource = dtGridEscala;
 
-            //gridEscala.ClearSelection();
             gridEscala.ClearSelection();
         }
 
@@ -227,12 +231,13 @@ namespace LearningBass
 
         private void BtTocarNotas_Click(object sender, EventArgs e)
         {
-            Stream strOK;
             foreach (string item in vetNotasDaEscala)
             {
-                strOK = (Stream)Properties.Resources.ResourceManager.GetObject((item + "2").ToString().Replace("#", "s"), null);
-                SoundPlayer SonidoOK = new SoundPlayer(strOK);
-                SonidoOK.Play();
+                exSom = new ExecSom(Som.Exec);
+                streamNota = (Stream)Properties.Resources.ResourceManager.GetObject((item+"2").Trim().Replace('#', 's'), null);
+
+                exSom(streamNota);
+                System.Threading.Thread.Sleep(1000);
             }
         }
     }

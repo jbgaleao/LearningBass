@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Consultas.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="Delegates.cs" />
     <Compile Include="Escalas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="LBPrincipal.Designer.cs">
       <DependentUpon>LBPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Som.cs" />
     <Compile Include="Util.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
