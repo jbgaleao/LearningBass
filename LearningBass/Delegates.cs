@@ -3,4 +3,5 @@
 namespace LearningBass
 {
     internal delegate void ExecSom(Stream strm);
+
 }

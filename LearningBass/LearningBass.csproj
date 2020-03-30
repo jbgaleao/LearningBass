@@ -126,12 +126,11 @@
       <DependentUpon>DBLearningBass.mdf</DependentUpon>
     </Content>
     <Content Include="Outros\ESCALAS MUSICAIS_ As 7 Obrigatórias Para Tocar QUALQUER MÚSICA.html" />
+    <Content Include="Outros\escalas-1.jpg" />
     <Content Include="Outros\escalas.jpg" />
     <Content Include="Outros\escalas2.jpg" />
     <Content Include="Outros\fomaçao das escalas.jfif" />
     <Content Include="Outros\Formulas das Escalas.txt" />
-    <Content Include="Outros\NotaCifradas.txt" />
-    <Content Include="Outros\notasCifradas.txt" />
     <Content Include="Outros\qryCriaTabela_CodMIDI_NomeNota.sql" />
     <Content Include="Outros\qryCriaTabela_FormulaEscalas.sql" />
     <Content Include="Outros\qryCriaTabela___CompleteBassNotes.sql" />

@@ -4,6 +4,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Media;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace LearningBass
@@ -31,6 +32,7 @@ namespace LearningBass
 
         ExecSom exSom;
         Stream streamNota;
+        string NotaExecutada;
 
         #endregion
 
@@ -165,7 +167,7 @@ namespace LearningBass
             bool notacao = rbEscalaSustenido.Checked ? true : false;
             DataTable dt = Consultas.RetornaEscala(cmbTipoEscala.Text);
 
-            string Oitava =  cmbNotaTonica.Text+cmbOitava.Text;
+            string Oitava = cmbNotaTonica.Text + cmbOitava.Text;
 
             switch (Oitava)
             {
@@ -183,27 +185,31 @@ namespace LearningBass
                     break;
             }
 
-            bool _verificaOitava = VerificaOitava(cmbOitava.Text, cmbNotaTonica.Text);
-            if (_verificaOitava)
+            if (Oitava.Contains("4") && (Oitava != "C4"))
             {
                 MessageBox.Show("Para a 4ª Oitava, a nota tônica selecionada deve ser exclusivamente C (Dó).");
                 return;
             }
-            
-            //string Oitava = ((cmbOitava.Text == "1") && (cmbNotaTonica.Text == "B")) ? "B0" : cmbNotaTonica.Text + cmbOitava.Text;
-
 
             string NotasDaEscala = Escalas.GetEscala(Oitava, dt, notacao);
-
 
             // vet-NotasDaEscala = C,D,E,F,G,A,B
             // vet-FormulaEscala = 2,2,1,2,2,2,1
 
-
-
             vetNotasDaEscala = NotasDaEscala.Split(',');
             vetFormulaEscala = dt.Rows[0][0].ToString().Split(',');
-            vetGridEscala = new string[13];
+
+
+            // Calcula o numero de colunas para serem criadas dinamicamente
+            DataTable dtGridEscala = new DataTable();
+            int TotalDeColunas = 1;
+            foreach (string item in vetFormulaEscala)
+            {
+                TotalDeColunas += Math.Abs(Convert.ToInt32(item));
+            }
+            // -------------------------------------------------------------
+
+            vetGridEscala = new string[TotalDeColunas];
 
             vetGridEscala[0] = vetNotasDaEscala[0].ToString();
             int j = 0;
@@ -215,16 +221,6 @@ namespace LearningBass
                 vetGridEscala[j] = vetNotasDaEscala[k].ToString();
                 k++;
             }
-
-
-            // Calcula o numero de colunas para serem criadas dinamicamente
-            DataTable dtGridEscala = new DataTable();
-            int TotalDeColunas = 1;
-            foreach (string item in vetFormulaEscala)
-            {
-                TotalDeColunas += Math.Abs(Convert.ToInt32(item));
-            }
-            // -------------------------------------------------------------
 
 
             // cria a qtd de colunas calculada acima
@@ -239,15 +235,7 @@ namespace LearningBass
             gridEscala.DataSource = dtGridEscala;
 
             gridEscala.ClearSelection();
-        }
-
-
-        private bool VerificaOitava(string oitava, string tonica)
-        {
-            if ((oitava == "4") && (tonica != "C"))
-                return true;
-            else
-                return false;
+            btTocarNotas.Enabled = true;
         }
 
         private void RbEscalaBemol_CheckedChanged(object sender, EventArgs e)
@@ -270,13 +258,14 @@ namespace LearningBass
 
         private void BtTocarNotas_Click(object sender, EventArgs e)
         {
+            decimal intervalo = numUpDown.Value;
             foreach (string item in vetNotasDaEscala)
             {
+                NotaExecutada = item;
                 exSom = new ExecSom(Som.Exec);
-                //streamNota = (Stream)Properties.Resources.ResourceManager.GetObject((item + "2").Trim().Replace('#', 's'), null);
                 streamNota = (Stream)Properties.Resources.ResourceManager.GetObject(item, null);
                 exSom(streamNota);
-                System.Threading.Thread.Sleep(1000);
+                Thread.Sleep(Convert.ToInt16(intervalo));
             }
         }
     }
