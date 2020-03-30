@@ -82,7 +82,7 @@ namespace LearningBass
             {
                 DBConnection.Instance.Close();
                 DBConnection.openConnection();
-                string str = string.Format(@"select FormulaEscala from  FormulaEscalas where NomeEscala = '{0}'", TipoEscala);
+                string str = string.Format(@"select FormulaEscala from FormulaEscalas where NomeEscala = '{0}'", TipoEscala);
                 SqlCommand cmd = new SqlCommand(str, DBConnection.Instance);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);

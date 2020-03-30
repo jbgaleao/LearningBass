@@ -46,6 +46,7 @@ namespace LearningBass
             cmbTipoEscala.DataSource = ListaTiposEscalas;
 
             cmbNotaTonica.SelectedIndex = 0;
+            cmbOitava.SelectedIndex = 0;
             cmbTipoEscala.SelectedIndex = 0;
 
             cmbQtdCasas.SelectedIndex = 0;
@@ -161,9 +162,38 @@ namespace LearningBass
 
         private void btnGerarEscala_Click(object sender, EventArgs e)
         {
-            bool notacao = (rbEscalaSustenido.Checked) ? true : false;
+            bool notacao = rbEscalaSustenido.Checked ? true : false;
             DataTable dt = Consultas.RetornaEscala(cmbTipoEscala.Text);
-            string NotasDaEscala = Escalas.GetEscala(cmbNotaTonica.Text, dt, notacao);
+
+            string Oitava =  cmbNotaTonica.Text+cmbOitava.Text;
+
+            switch (Oitava)
+            {
+                case "B1":
+                    Oitava = "B0";
+                    break;
+                case "B2":
+                    Oitava = "B1";
+                    break;
+                case "B3":
+                    Oitava = "B2";
+                    break;
+                case "B4":
+                    Oitava = "B3";
+                    break;
+            }
+
+            bool _verificaOitava = VerificaOitava(cmbOitava.Text, cmbNotaTonica.Text);
+            if (_verificaOitava)
+            {
+                MessageBox.Show("Para a 4ª Oitava, a nota tônica selecionada deve ser exclusivamente C (Dó).");
+                return;
+            }
+            
+            //string Oitava = ((cmbOitava.Text == "1") && (cmbNotaTonica.Text == "B")) ? "B0" : cmbNotaTonica.Text + cmbOitava.Text;
+
+
+            string NotasDaEscala = Escalas.GetEscala(Oitava, dt, notacao);
 
 
             // vet-NotasDaEscala = C,D,E,F,G,A,B
@@ -211,6 +241,15 @@ namespace LearningBass
             gridEscala.ClearSelection();
         }
 
+
+        private bool VerificaOitava(string oitava, string tonica)
+        {
+            if ((oitava == "4") && (tonica != "C"))
+                return true;
+            else
+                return false;
+        }
+
         private void RbEscalaBemol_CheckedChanged(object sender, EventArgs e)
         {
             cmbNotaTonica.DataSource = ListaBemois;
@@ -234,8 +273,8 @@ namespace LearningBass
             foreach (string item in vetNotasDaEscala)
             {
                 exSom = new ExecSom(Som.Exec);
-                streamNota = (Stream)Properties.Resources.ResourceManager.GetObject((item+"2").Trim().Replace('#', 's'), null);
-
+                //streamNota = (Stream)Properties.Resources.ResourceManager.GetObject((item + "2").Trim().Replace('#', 's'), null);
+                streamNota = (Stream)Properties.Resources.ResourceManager.GetObject(item, null);
                 exSom(streamNota);
                 System.Threading.Thread.Sleep(1000);
             }
