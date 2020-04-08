@@ -142,6 +142,7 @@
     <Content Include="Outros\qry_CreateTable_xxxx.sql" />
     <Content Include="Outros\qry_Insert_CompleteBassNotes.sql" />
     <Content Include="Outros\unnamed.jpg" />
+    <None Include="Resources\ding.wav" />
     <None Include="Resources\error.wav" />
     <None Include="Resources\err.wav" />
     <None Include="Resources\Gs4.wav" />

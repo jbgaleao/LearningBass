@@ -259,13 +259,22 @@ namespace LearningBass
         private void BtTocarNotas_Click(object sender, EventArgs e)
         {
             decimal intervalo = numUpDown.Value;
-            foreach (string item in vetNotasDaEscala)
+            int NumeroRepeticoes = Convert.ToInt16(NumRepeticoesUpDown.Value);
+
+            for (int i = 0; i < NumeroRepeticoes; i++)
             {
-                NotaExecutada = item;
+                foreach (string item in vetNotasDaEscala)
+                {
+                    NotaExecutada = item;
+                    exSom = new ExecSom(Som.Exec);
+                    streamNota = (Stream)Properties.Resources.ResourceManager.GetObject(item, null);
+                    exSom(streamNota);
+                    Thread.Sleep(Convert.ToInt16(intervalo));
+                }
                 exSom = new ExecSom(Som.Exec);
-                streamNota = (Stream)Properties.Resources.ResourceManager.GetObject(item, null);
+                streamNota = (Stream)Properties.Resources.ResourceManager.GetObject("ding", null);
                 exSom(streamNota);
-                Thread.Sleep(Convert.ToInt16(intervalo));
+                Thread.Sleep(Convert.ToInt16(intervalo * 2));
             }
         }
     }

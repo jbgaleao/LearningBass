@@ -63,7 +63,9 @@
             this.cmbQtdCasas = new System.Windows.Forms.ComboBox();
             this.label64 = new System.Windows.Forms.Label();
             this.tabEscalas = new System.Windows.Forms.TabPage();
+            this.numUpDown = new System.Windows.Forms.NumericUpDown();
             this.btTocarNotas = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.gridEscala = new System.Windows.Forms.DataGridView();
             this.pnEscalas = new System.Windows.Forms.Panel();
             this.gboxEscala = new System.Windows.Forms.GroupBox();
@@ -80,8 +82,8 @@
             this.tabAcordes = new System.Windows.Forms.TabPage();
             this.tabDitadoMusical = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.numUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.NumRepeticoesUpDown = new System.Windows.Forms.NumericUpDown();
             this.tabControlFuncionalidades.SuspendLayout();
             this.tabMapeamentoBraco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotas)).BeginInit();
@@ -89,11 +91,12 @@
             this.gboxInstrumentos.SuspendLayout();
             this.gboxConfiguraNotacao.SuspendLayout();
             this.tabEscalas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).BeginInit();
             this.pnEscalas.SuspendLayout();
             this.gboxEscala.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumRepeticoesUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlFuncionalidades
@@ -448,7 +451,9 @@
             // tabEscalas
             // 
             this.tabEscalas.BackColor = System.Drawing.Color.White;
+            this.tabEscalas.Controls.Add(this.NumRepeticoesUpDown);
             this.tabEscalas.Controls.Add(this.numUpDown);
+            this.tabEscalas.Controls.Add(this.label5);
             this.tabEscalas.Controls.Add(this.btTocarNotas);
             this.tabEscalas.Controls.Add(this.label4);
             this.tabEscalas.Controls.Add(this.gridEscala);
@@ -460,16 +465,54 @@
             this.tabEscalas.TabIndex = 1;
             this.tabEscalas.Text = "Escalas";
             // 
+            // numUpDown
+            // 
+            this.numUpDown.Increment = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            this.numUpDown.Location = new System.Drawing.Point(207, 311);
+            this.numUpDown.Maximum = new decimal(new int[] {
+            2000,
+            0,
+            0,
+            0});
+            this.numUpDown.Minimum = new decimal(new int[] {
+            400,
+            0,
+            0,
+            0});
+            this.numUpDown.Name = "numUpDown";
+            this.numUpDown.ReadOnly = true;
+            this.numUpDown.Size = new System.Drawing.Size(87, 24);
+            this.numUpDown.TabIndex = 163;
+            this.numUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numUpDown.Value = new decimal(new int[] {
+            800,
+            0,
+            0,
+            0});
+            // 
             // btTocarNotas
             // 
             this.btTocarNotas.Enabled = false;
-            this.btTocarNotas.Location = new System.Drawing.Point(355, 304);
+            this.btTocarNotas.Location = new System.Drawing.Point(653, 304);
             this.btTocarNotas.Name = "btTocarNotas";
             this.btTocarNotas.Size = new System.Drawing.Size(156, 36);
             this.btTocarNotas.TabIndex = 160;
             this.btTocarNotas.Text = "Executar Escala";
             this.btTocarNotas.UseVisualStyleBackColor = true;
             this.btTocarNotas.Click += new System.EventHandler(this.BtTocarNotas_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 313);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(183, 18);
+            this.label4.TabIndex = 155;
+            this.label4.Text = "Intervalo entre Notas: (ms)";
             // 
             // gridEscala
             // 
@@ -676,41 +719,33 @@
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // numUpDown
+            // label5
             // 
-            this.numUpDown.Increment = new decimal(new int[] {
-            200,
-            0,
-            0,
-            0});
-            this.numUpDown.Location = new System.Drawing.Point(207, 311);
-            this.numUpDown.Maximum = new decimal(new int[] {
-            2000,
-            0,
-            0,
-            0});
-            this.numUpDown.Minimum = new decimal(new int[] {
-            400,
-            0,
-            0,
-            0});
-            this.numUpDown.Name = "numUpDown";
-            this.numUpDown.Size = new System.Drawing.Size(87, 24);
-            this.numUpDown.TabIndex = 163;
-            this.numUpDown.Value = new decimal(new int[] {
-            800,
-            0,
-            0,
-            0});
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(363, 313);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 18);
+            this.label5.TabIndex = 155;
+            this.label5.Text = "Número repetições:";
             // 
-            // label4
+            // NumRepeticoesUpDown
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 313);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 18);
-            this.label4.TabIndex = 155;
-            this.label4.Text = "Intervalo entre Notas: (ms)";
+            this.NumRepeticoesUpDown.Location = new System.Drawing.Point(508, 311);
+            this.NumRepeticoesUpDown.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.NumRepeticoesUpDown.Name = "NumRepeticoesUpDown";
+            this.NumRepeticoesUpDown.ReadOnly = true;
+            this.NumRepeticoesUpDown.Size = new System.Drawing.Size(87, 24);
+            this.NumRepeticoesUpDown.TabIndex = 163;
+            this.NumRepeticoesUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NumRepeticoesUpDown.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // LBPrincipal
             // 
@@ -734,13 +769,14 @@
             this.gboxConfiguraNotacao.PerformLayout();
             this.tabEscalas.ResumeLayout(false);
             this.tabEscalas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridEscala)).EndInit();
             this.pnEscalas.ResumeLayout(false);
             this.gboxEscala.ResumeLayout(false);
             this.gboxEscala.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumRepeticoesUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -794,5 +830,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numUpDown;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown NumRepeticoesUpDown;
+        private System.Windows.Forms.Label label5;
     }
 }
