@@ -56,7 +56,6 @@ namespace LearningBass
             return str;
         }
 
-
         private static IList<string> GetSequenciaDeNotas(bool Sustenidos)
         {
             return (Sustenidos) ? SequenciaNotasSustenidos : SequenciaNotasBemois;
